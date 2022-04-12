@@ -3,8 +3,8 @@ import {Container, Nav, Col, Row, Tab} from 'react-bootstrap'
 
 
 // Importing components
-// import Curry from './Curry';
-// import Nan from './Nan';
+import Curry from './Curry';
+import Nan from './Nan';
 // import Drink from './Drink';
 // import Sides from './Sides';
 // import Sets from './Sets';
@@ -36,10 +36,10 @@ const Menu = () => {
           <Col className="menu-col menu-content" xs={12} sm={9} md={10}>
             <Tab.Content>
               <Tab.Pane eventKey="Curry">
-                {/* < Curry /> */}
+                < Curry />
               </Tab.Pane>
               <Tab.Pane eventKey="Nan">
-                {/* < Nan /> */}
+                < Nan />
               </Tab.Pane>
               <Tab.Pane eventKey="Sides">
                 {/* < Sides /> */}
