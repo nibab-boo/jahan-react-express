@@ -1,34 +1,23 @@
-import './App.css';
 import React, {useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import './assets/stylesheets/application.css'
-
 // importing from components
-import Header from './components/Header';
+// import Header from './Header';
 // import HomeCarousel from './HomeCarousel';
 // import PhotoGallery from './PhotoGallery';
 // import Contact from './Contact';
-import Footer from "./components/Footer";
-import { LanguageProvider } from './components/LanguageProvider';
+// import Footer from "./Footer";
+// import Menu from "./Menu"
 
-function App() {
-  // const [data, setData] = useState(null);
 
-  // useEffect(() => {
-  //   fetch("/api")
-  //     .then((res) => res.json())
-  //     .then((data) =>{
-  //       console.log(data);
-  //       setData(data.message)
-  //     });
-  // }, []);
-
+const App = () => {
+ 
   return (
-    <LanguageProvider>
+    <>
       <Router>
         <Header />
-        {/* <Routes>
+        <Routes>
           <Route exact path="/" element={(
             <> 
               <HomeCarousel />
@@ -38,17 +27,18 @@ function App() {
           )}
           >
           </Route>
-          <Route path="/menu" element={(
+          {/* <Route path="/menu" element={(
             <>
               <Menu />
+              {/* < Menu /> */}
             </>
           )}>
-          </Route>
-        </Routes> */}
+          </Route> */}
+        </Routes>
         <Footer />
       </Router>
-    </LanguageProvider>
+    </>
   );
-}
+};
 
 export default App;
