@@ -5,9 +5,9 @@ import {Container, Nav, Col, Row, Tab} from 'react-bootstrap'
 // Importing components
 import Curry from './Curry';
 import Nan from './Nan';
-// import Drink from './Drink';
 import Sides from './Sides';
-// import Sets from './Sets';
+import Sets from './Sets';
+// import Drink from './Drink';
 
 const Menu = () => {
   return (
@@ -46,7 +46,7 @@ const Menu = () => {
               </Tab.Pane>
               
               <Tab.Pane eventKey="Sets">
-                {/* < Sets /> */}
+                < Sets />
               </Tab.Pane>
               <Tab.Pane eventKey="Drink">
                 {/* < Drink /> */}
