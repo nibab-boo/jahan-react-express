@@ -6,9 +6,9 @@ import './assets/stylesheets/application.css'
 
 // importing from components
 import Header from './components/Header';
-// import HomeCarousel from './HomeCarousel';
-// import PhotoGallery from './PhotoGallery';
-// import Contact from './Contact';
+import HomeCarousel from './components/HomeCarousel';
+import PhotoGallery from './components/PhotoGallery';
+import Contact from './components/Contact';
 import Footer from "./components/Footer";
 import { LanguageProvider } from './components/LanguageProvider';
 
@@ -28,7 +28,7 @@ function App() {
     <LanguageProvider>
       <Router>
         <Header />
-        {/* <Routes>
+         <Routes>
           <Route exact path="/" element={(
             <> 
               <HomeCarousel />
@@ -38,13 +38,15 @@ function App() {
           )}
           >
           </Route>
+          {/*
           <Route path="/menu" element={(
             <>
               <Menu />
             </>
           )}>
           </Route>
-        </Routes> */}
+        */}
+        </Routes>
         <Footer />
       </Router>
     </LanguageProvider>
