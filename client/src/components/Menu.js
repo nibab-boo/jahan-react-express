@@ -7,7 +7,7 @@ import Curry from './Curry';
 import Nan from './Nan';
 import Sides from './Sides';
 import Sets from './Sets';
-// import Drink from './Drink';
+import Drink from './Drink';
 
 const Menu = () => {
   return (
@@ -49,7 +49,7 @@ const Menu = () => {
                 < Sets />
               </Tab.Pane>
               <Tab.Pane eventKey="Drink">
-                {/* < Drink /> */}
+                < Drink />
               </Tab.Pane>
             </Tab.Content>
           </Col>
