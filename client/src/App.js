@@ -1,4 +1,3 @@
-import './App.css';
 import React, {useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -10,6 +9,7 @@ import HomeCarousel from './components/HomeCarousel';
 import PhotoGallery from './components/PhotoGallery';
 import Contact from './components/Contact';
 import Footer from "./components/Footer";
+import Menu from "./components/Menu";
 import { LanguageProvider } from './components/LanguageProvider';
 
 function App() {
@@ -38,14 +38,14 @@ function App() {
           )}
           >
           </Route>
-          {/*
+          
           <Route path="/menu" element={(
             <>
               <Menu />
             </>
           )}>
           </Route>
-        */}
+       
         </Routes>
         <Footer />
       </Router>
