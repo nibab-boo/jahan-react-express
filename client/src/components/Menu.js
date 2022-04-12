@@ -6,7 +6,7 @@ import {Container, Nav, Col, Row, Tab} from 'react-bootstrap'
 import Curry from './Curry';
 import Nan from './Nan';
 // import Drink from './Drink';
-// import Sides from './Sides';
+import Sides from './Sides';
 // import Sets from './Sets';
 
 const Menu = () => {
@@ -42,7 +42,7 @@ const Menu = () => {
                 < Nan />
               </Tab.Pane>
               <Tab.Pane eventKey="Sides">
-                {/* < Sides /> */}
+                <Sides />
               </Tab.Pane>
               
               <Tab.Pane eventKey="Sets">
