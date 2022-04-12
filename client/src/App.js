@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './App.scss';
+import './App.css';
 import {useEffect, useState } from 'react'
 
 import { LanguageProvider } from './components/LanguageProvider';
@@ -10,7 +10,10 @@ function App() {
   useEffect(() => {
     fetch("/api")
       .then((res) => res.json())
-      .then((data) => setData(data.message));
+      .then((data) =>{
+        console.log(data);
+        setData(data.message)
+      });
   }, []);
 
   return (
