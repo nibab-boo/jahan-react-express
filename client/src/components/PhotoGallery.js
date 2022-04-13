@@ -8,6 +8,7 @@ import kingfisher from "./../assets/images/kingfisher.png"
 import vodkha from "./../assets/images/8848vodkha.png"
 import seekhKabab from "./../assets/images/seekh_kabab.jpeg"
 import keema from "./../assets/images/kemma.jpeg"
+import { data } from 'cheerio/lib/api/attributes';
 
 
 const PhotoGallery = () => {
@@ -20,8 +21,11 @@ const PhotoGallery = () => {
   //   fetch("/api")
   //     .then((res) => res.json())
   //     .then((data) =>{
-  //       console.log(data.message);
-  //       setImageList(JSON.parse(data.message));
+        // console.log(data.message);
+            // if (data.message &&  data.message.length ) {
+              //       setImageList(JSON.parse(data.message));
+
+            // }
   //     });
   // }, []);
 
