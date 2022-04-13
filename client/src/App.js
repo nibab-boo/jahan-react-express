@@ -45,7 +45,11 @@ function App() {
             </>
           )}>
           </Route>
-       
+          <Route path="/blog" element={
+            <>
+            </>
+          }>
+          </Route>
         </Routes>
         <Footer />
       </Router>

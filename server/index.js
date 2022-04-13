@@ -22,7 +22,7 @@ app.get("/api",async (req, res) => {
   // using CSS selector  
   $('img.hKgQud').each((i, image) => {
     const imageNode = $(image).attr("src");
-    const imageText = imageNode.replace(/=w\d+-h\d+-no/, '=w400-h400-no')
+    const imageText = imageNode.replace(/=w\d+-h\d+-no/, '=w600-h600-no')
     console.log(imageNode);
     imageText
     
@@ -35,4 +35,5 @@ app.get("/api",async (req, res) => {
 });
 app.listen(PORT, ()=> {
   console.log(`Server listening on ${PORT}`);
+  
 });

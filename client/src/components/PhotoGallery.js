@@ -14,18 +14,18 @@ import { data } from 'cheerio/lib/api/attributes';
 const PhotoGallery = () => {
 
   const [imageList, setImageList] = useState([
-    twoCurrySet, vodkha, puriIce, cheeseNan, kingfisher, seekhKabab, keema
+    twoCurrySet, vodkha, puriIce, cheeseNan, kingfisher
   ])
 
   // useEffect(() => {
   //   fetch("/api")
   //     .then((res) => res.json())
   //     .then((data) =>{
-        // console.log(data.message);
-            // if (data.message &&  data.message.length ) {
-              //       setImageList(JSON.parse(data.message));
+  //       console.log(data.message);
+  //           if (data.message &&  data.message.length ) {
+  //                   setImageList(JSON.parse(data.message));
 
-            // }
+  //           }
   //     });
   // }, []);
 
