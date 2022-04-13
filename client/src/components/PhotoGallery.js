@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 
 // photo import
 import twoCurrySet from "./../assets/images/2curryset.jpg"
@@ -11,15 +11,33 @@ import keema from "./../assets/images/kemma.jpeg"
 
 
 const PhotoGallery = () => {
+
+  const [imageList, setImageList] = useState([
+    twoCurrySet, vodkha, puriIce, cheeseNan, kingfisher, seekhKabab, keema
+  ])
+
+  // useEffect(() => {
+  //   fetch("/api")
+  //     .then((res) => res.json())
+  //     .then((data) =>{
+  //       console.log(data.message);
+  //       setImageList(JSON.parse(data.message));
+  //     });
+  // }, []);
+
   return (
     <>
     {/* // <div className='container pt-3'> */}
       <h2 className='jahan'>Photo Gallery</h2>
       <div className="photo-gallery">
-        <div className="div1">
-          <img src={twoCurrySet} alt="gallery_image" />
-        </div>
-        <div className="div2">
+        {
+          imageList.map((image, index) => (
+            <div className={`div${index + 1}`}>
+              <img src={image} alt="gallery_image" />
+            </div>
+            ))
+        }
+        {/* <div className="div2">
           <img src={vodkha} alt="gallery_image" />
         </div>
         <div className="div3">
@@ -36,7 +54,7 @@ const PhotoGallery = () => {
         </div>
         <div className="div7">
           <img src={keema} alt="gallery_image" />
-        </div>
+        </div> */}
       </div>
     </>
     // </div>

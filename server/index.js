@@ -9,47 +9,28 @@ const PORT = process.env.PORT || 5001;
 const app = express();
 
 app.use(cors());
-const getReddit = async () => {
-  // get html text from reddit
-  const response = await fetch('https://reddit.com/');
-  // using await to ensure that the promise resolves
-  const body = await response.text();
 
-  // parse the html text and extract titles
-  const $ = cheerio.load(body);
-  const titleList = [];
-    
-  // using CSS selector  
-  $('._eYtD2XCVieq6emjKBH3m').each((i, title) => {
-    const titleNode = $(title);
-    const titleText = titleNode.text();
-    
-    titleList.push(titleText);
-  });
-
-  console.log(titleList);
-  return titleList
-  // res.json({message: JSON.stringify(title)});
-};
 
 app.get("/api",async (req, res) => {
-  const response = await fetch('https://reddit.com/');
+  const response = await fetch('https://photos.app.goo.gl/ji7CqqSXMhHFrKML7/');
   const body = await response.text();
 
   // parse the html text and extract titles
   const $ = cheerio.load(body);
-  const titleList = [];
+  const imageList = [];
   
   // using CSS selector  
-  $('._eYtD2XCVieq6emjKBH3m').each((i, title) => {
-    const titleNode = $(title);
-    const titleText = titleNode.text();
+  $('img.hKgQud').each((i, image) => {
+    const imageNode = $(image).attr("src");
+    const imageText = imageNode.replace(/=w\d+-h\d+-no/, '=w400-h400-no')
+    console.log(imageNode);
+    imageText
     
-    titleList.push(titleText);
+    imageList.push(imageText);
   });
   
-  console.log(titleList);
-  res.json({message: JSON.stringify(titleList)});
+  console.log(imageList);
+  res.json({message: JSON.stringify(imageList)});
   
 });
 app.listen(PORT, ()=> {
