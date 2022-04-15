@@ -10,6 +10,7 @@ import PhotoGallery from './components/PhotoGallery';
 import Contact from './components/Contact';
 import Footer from "./components/Footer";
 import Menu from "./components/Menu";
+import Blog from "./components/Blog";
 import { LanguageProvider } from './components/LanguageProvider';
 
 function App() {
@@ -47,6 +48,7 @@ function App() {
           </Route>
           <Route path="/blog" element={
             <>
+              < Blog/>
             </>
           }>
           </Route>

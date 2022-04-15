@@ -10,6 +10,9 @@ const app = express();
 
 app.use(cors());
 
+app.get("/form", async(req, res) => {
+  
+});
 
 app.get("/api",async (req, res) => {
   const response = await fetch('https://photos.app.goo.gl/ji7CqqSXMhHFrKML7/');
