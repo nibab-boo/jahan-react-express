@@ -1,5 +1,8 @@
 import {useState, useEffect, useContext, createContext} from 'react';
 
+import { jsonEn } from './json_en';
+import { jsonJp } from './json_jp';
+
 const LanguageContext = createContext();
 const LanguageUpdateContext = createContext();
 
@@ -10,28 +13,30 @@ export const useLanUpdateContext = () => {
   return useContext(LanguageUpdateContext);
 }
 
-
 const LanguageProvider = ({children}) => {
-  // const [enLan, setEnLan] = useState(true);
+  const [enLan, setEnLan] = useState(true);
 
-  // const [json, setJson] = useState({});
-  // useEffect(() => {
-  //   // fetch json en
-  // })
-  // const toggleLan = () => {
-  //   setEnLan(!enLan);
-  //   if (enLan) {
-  //     // fetch json en
-  //   } else {
-  //     // fetch json jp
-  //   }
-  // }
+  const [json, setJson] = useState(jsonEn);
+
+  const toggleLan = () => {
+    setEnLan(() => !enLan);
+    changeJson();
+  }
+
+  const changeJson = () => {
+    if (enLan) {
+      setJson(jsonEn);
+    } else {
+      setJson(jsonJp);
+    }
+  }
+
 
   return (
-    // <LanguageContext.Provider value = { json }>
-    <LanguageContext.Provider>
-      <LanguageUpdateContext.Provider>
-      {/* <LanguageUpdateContext.Provider value={ toggleLan }> */}
+    <LanguageContext.Provider value = { json }>
+    {/* <LanguageContext.Provider> */}
+      {/* <LanguageUpdateContext.Provider> */}
+      <LanguageUpdateContext.Provider value={ toggleLan }>
 
         {children}
       </LanguageUpdateContext.Provider>
