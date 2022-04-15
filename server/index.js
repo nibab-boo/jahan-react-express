@@ -1,3 +1,9 @@
+const {
+  authenticate
+} = require('@google-cloud/local-auth');
+const path = require('path');
+const google = require('@googleapis/forms');
+
 const express = require("express");
 const res = require("express/lib/response");
 const fetch = require('node-fetch');
@@ -9,10 +15,6 @@ const PORT = process.env.PORT || 5001;
 const app = express();
 
 app.use(cors());
-
-app.get("/form", async(req, res) => {
-  
-});
 
 app.get("/api",async (req, res) => {
   const response = await fetch('https://photos.app.goo.gl/ji7CqqSXMhHFrKML7/');
@@ -38,5 +40,4 @@ app.get("/api",async (req, res) => {
 });
 app.listen(PORT, ()=> {
   console.log(`Server listening on ${PORT}`);
-  
 });
