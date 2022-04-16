@@ -2,6 +2,9 @@ import React from 'react';
 import {Container, Nav, Col, Row, Tab} from 'react-bootstrap'
 
 
+// Importing Context custom hooks
+import { useLanContext } from './LanguageProvider.js'
+
 // Importing components
 import Curry from './Curry';
 import Nan from './Nan';
@@ -9,7 +12,11 @@ import Sides from './Sides';
 import Sets from './Sets';
 import Drink from './Drink';
 
+
 const Menu = () => {
+  const json = useLanContext();
+  const menu = json.menu;
+  console.log(menu);
   return (
     <Container className='mt-5 py-5 position-relative'>
       <Tab.Container id="left-tabs-example" defaultActiveKey="Sets">
@@ -36,7 +43,7 @@ const Menu = () => {
           <Col className="menu-col menu-content" xs={12} sm={9} md={10}>
             <Tab.Content>
               <Tab.Pane eventKey="Curry">
-                < Curry />
+                < Curry curries= { menu.curry } />
               </Tab.Pane>
               <Tab.Pane eventKey="Nan">
                 < Nan />
