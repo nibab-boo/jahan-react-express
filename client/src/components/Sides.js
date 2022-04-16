@@ -3,10 +3,33 @@ import { Tabs, Tab } from 'react-bootstrap';
 
 import cheeseNan from "./../assets/images/cheese_nan.jpeg"
 
-const Sides = () => {
+const Sides = ({ sides }) => {
   return (
     <>
       <Tabs defaultActiveKey="Tandoori" id="menu-sub-tab" className="mb-3">
+        {
+          sides.map((sideType) => (
+            <Tab eventKey={sideType.name} title={sideType.name}>
+              <div className='food-box'>
+                { 
+                  sideType.items.map((side) => (
+
+                    <div className="food-card">
+                      <img src={cheeseNan} alt={`${side.name}`} />
+                      <div className="set-card">
+                        <h4 className="food-name">{side.name}</h4>
+                        <p className="food-info">{side.description}</p>
+                        <p className="food-info price">{side.price}</p>
+                      </div>
+                    </div>
+                  ))
+                }
+              </div>
+            </Tab>
+          ))
+        }
+      </Tabs>
+      {/* <Tabs defaultActiveKey="Tandoori" id="menu-sub-tab" className="mb-3">
         <Tab eventKey="Tandoori" title="Tandoori">
           <div className='food-box'>
             <div className="food-card">
@@ -91,7 +114,7 @@ const Sides = () => {
             </div>
           </div>
         </Tab>
-      </Tabs>
+      </Tabs> */}
     </>
   );
 };

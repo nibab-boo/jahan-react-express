@@ -48,7 +48,7 @@ const Menu = () => {
                 < Nan nans= { menu.nan }/>
               </Tab.Pane>
               <Tab.Pane eventKey="Sides">
-                <Sides />
+                <Sides sides={menu.sides} />
               </Tab.Pane>
               
               <Tab.Pane eventKey="Sets">

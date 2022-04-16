@@ -128,53 +128,62 @@ export const jsonEn = {
         price: "$400"
       }
     ],
-    sides: {
-      tandoori: [
-        {
-          name: "Tandoori Prawn",
-          description: "Since we tandoor everything, why not AB. It is tandoor everything gone right.",
-          price: "$700"
-        },{
-          name: "Chicken Tikka",
-          description: "Boneless chicken grilled in tandori with Indian spices.",
-          price: "$560"
-        },{
-          name: "Tandori Chicken",
-          description: "From where we from, we need atleast a bit of fight to savour our victory. Likewise for meat, we need a bit of bone to juicy texture.",
-          price: "$420(1p)"
-        },{
-          name: "Tandoori Mix Gril",
-          description: "True heaven for meat lover.",
-          price: "$1350"
-        }
-      ],
-      salad: [
-        {
-          name: "Panner Salad",
-          description: "Salad with indian inhouse cheese.",
-          price: "$500"
-        },{
+    sides: [
+      {
+        name: "Tandoori",
+        items: [
+          {
+            name: "Tandoori Prawn",
+            description: "Since we tandoor everything, why not AB. It is tandoor everything gone right.",
+            price: "$700"
+          },{
+            name: "Chicken Tikka",
+            description: "Boneless chicken grilled in tandori with Indian spices.",
+            price: "$560"
+          },{
+            name: "Tandori Chicken",
+            description: "From where we from, we need atleast a bit of fight to savour our victory. Likewise for meat, we need a bit of bone to juicy texture.",
+            price: "$420(1p)"
+          },{
+            name: "Tandoori Mix Gril",
+            description: "True heaven for meat lover.",
+            price: "$1350"
+          }
+        ]
+      },
+      {
+        name: "Salad",
+        items: [
+          {
+            name: "Panner Salad",
+            description: "Salad with indian inhouse cheese.",
+            price: "$500"
+          },{
           name: "Tomato Salad",
           description: "Salad with Juicy tomato.",
           price: "$500"
-        }
-      ],
-      appetizer: [
-        {
-          name: "Mo:Mo",
-          description: "Nepalese style dumpling filled with juicy and spicy chicken and mutton.",
-          price: "$500"
-        },{
-          name: "Onion Ring",
-          description: "Deep fried onion with special spiced batter.",
-          price: "$300"
-        },{
-          name: "Sunagimo Itame",
-          description: "Gizzard fry that does wonder.",
-          price: "$440"
-        }
-      ]
-    },
+          }
+        ]
+      },
+      {
+        name: "Appetizer",
+        items: [
+          {
+            name: "Mo:Mo",
+            description: "Nepalese style dumpling filled with juicy and spicy chicken and mutton.",
+            price: "$500"
+          },{
+            name: "Onion Ring",
+            description: "Deep fried onion with special spiced batter.",
+            price: "$300"
+          },{
+            name: "Sunagimo Itame",
+            description: "Gizzard fry that does wonder.",
+            price: "$440"
+          }
+        ]
+      }
+    ],
     sets: [
       {
         name: "Lunch",
@@ -241,65 +250,61 @@ export const jsonEn = {
           }
         ]
       }
+    ],
+    drinks: [
+      {
+        name: "Beer",
+        items: [
+          {
+            name: "Nepal Ice (Nepal)",
+            price: "$520"
+          },{
+            name: "Everest (Nepal)",
+            price: "$550"
+          },{
+            name: "KingFisher (India)",
+            price: "$550"
+          },{
+            name: "Asahi Draft Beer (Japan)",
+            price: "$399"
+          }
+        ]
+      }
+      ,{
+        name: "Softdrink",
+        items: [
+          {
+            name: "Lassi",
+            price: "$300"
+          },{
+            name: "Mango Lassi",
+            price: "$300"
+          },{
+            name: "Ice Chai",
+            price: "$300"
+          },{
+            name: "Hot Chai",
+            price: "$300"
+          }
+        ]
+      },{
+        name: "Hard drinks (Rock/ Water / Soda)",
+        items: [
+          {
+            name: "8848 (Vodka - From Nepal)",
+            price: "$450"
+          },{
+            name: "Khukhuri Rum (Rum - From Nepal)",
+            price: "$450"
+          },{
+            name: "Old Durbar (Whiskey - From Nepal)",
+            price: "$450"
+          },{
+            name: "Mc Dowells' (Rum - From India)",
+            price: "$450"
+          }
+        ]
+      }
     ]
-  },
-  drinks: [
-    {
-      name: "Beer",
-      list: [
-        {
-          name: "Beer",
-          items: [
-            {
-              name: "Nepal Ice (Nepal)",
-              price: "$520"
-            },{
-              name: "Everest (Nepal)",
-              price: "$550"
-            },{
-              name: "KingFisher (India)",
-              price: "$550"
-            },{
-              name: "Asahi Draft Beer (Japan)",
-              price: "$399"
-            }
-          ]
-        },{
-          name: "Softdrink",
-          items: [
-            {
-              name: "Lassi",
-              price: "$300"
-            },{
-              name: "Mango Lassi",
-              price: "$300"
-            },{
-              name: "Ice Chai",
-              price: "$300"
-            },{
-              name: "Hot Chai",
-              price: "$300"
-            }
-          ]
-        },{
-          name: "Hard drinks (Rock/ Water / Soda)",
-          items: [
-            {
-              name: "8848 (Vodka - From Nepal)",
-              price: "$450"
-            },{
-              name: "Khukhuri Rum (Rum - From Nepal)",
-              price: "$450"
-            },{
-              name: "Old Durbar (Whiskey - From Nepal)",
-              price: "$450"
-            },{
-              name: "Mc Dowells' (Rum - From India)",
-              price: "$450"
-            }
-          ]
-        }
-      ]
-    }
-  ]
+  }
 }
