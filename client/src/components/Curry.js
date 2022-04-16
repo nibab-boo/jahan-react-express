@@ -21,7 +21,6 @@ const Curry = ({curries}) => {
       }
     </div>
   )
-  
 };
 
 export default Curry;

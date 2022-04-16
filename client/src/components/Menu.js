@@ -46,7 +46,7 @@ const Menu = () => {
                 < Curry curries= { menu.curry } />
               </Tab.Pane>
               <Tab.Pane eventKey="Nan">
-                < Nan />
+                < Nan nans= { menu.nan }/>
               </Tab.Pane>
               <Tab.Pane eventKey="Sides">
                 <Sides />

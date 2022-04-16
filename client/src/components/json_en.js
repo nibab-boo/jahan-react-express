@@ -1,3 +1,8 @@
+import cheeseNan from "./../assets/images/cheese_nan.jpeg"
+import garlicCheeseNan from "./../assets/images/garlic_cheese_nan.jpeg"
+import aluParatha from "./../assets/images/aluParatha.jpg"
+
+
 export const jsonEn = {
   name: "Jahan Indo Nepal Restaurant",
   contact: {
@@ -108,14 +113,17 @@ export const jsonEn = {
     nan: [
       {
         name: "Cheese Nan",
+        image: cheeseNan,
         description: "Circular nan with cheesey inside.",
         price: "$420"
       },{
         name: "Garlic Cheese Nan",
+        image: garlicCheeseNan,
         description: "Nan with cheese might be something. But, cheesey Nan with garlic is more than something.",
         price: "$450"
       },{
         name: "Alu Paratha",
+        image: aluParatha,
         description: "Paratha is one of the most eaten delicacy in India. This one in particular has a filling of mashed potato and Indian spices.",
         price: "$400"
       }
