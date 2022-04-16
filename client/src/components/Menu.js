@@ -16,7 +16,6 @@ import Drink from './Drink';
 const Menu = () => {
   const json = useLanContext();
   const menu = json.menu;
-  console.log(menu);
   return (
     <Container className='mt-5 py-5 position-relative'>
       <Tab.Container id="left-tabs-example" defaultActiveKey="Sets">
@@ -53,7 +52,7 @@ const Menu = () => {
               </Tab.Pane>
               
               <Tab.Pane eventKey="Sets">
-                < Sets />
+                < Sets sets={ menu.sets } />
               </Tab.Pane>
               <Tab.Pane eventKey="Drink">
                 < Drink />
