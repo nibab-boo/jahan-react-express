@@ -80,44 +80,44 @@ export const jsonJp = {
       {
         name: "チキンカレー",
         description: "人気のチキンカレー.",
-        price: "$650"
+        price: "¥650"
       },
       {
         name: "バターチキン",
         description: "When we say butter chicken, we mean good, old, everyone's favourite.",
-        price: "$980"
+        price: "¥980"
       },
       {
         name: "チキンクルマ",
         description: "Special curry with sweet flavour made with malai tikka and nuts.",
-        price: "$800"
+        price: "¥800"
       },
       {
         name: "マトンカレー",
         description: "Curry with Lamb meat",
-        price: "$750"
+        price: "¥750"
       },
       {
         name: "マトンドピヤジャ",
         description: "Mutton curry flavoured with garlic and Capsicum.",
-        price: "$800"
+        price: "¥800"
       },
       {
         name: "キーマカレー",
         description: "Curry Made of minced chicken and mutton",
-        price: "$750"
+        price: "¥750"
       },{
         name: "キーマナスカレー",
         description: "Keema Curry with Nas topping",
-        price: "$750"
+        price: "¥750"
       },{
         name: "野菜カレー",
         description: "Combination of veggie brought together so you don't have to compromise.",
-        price: "$750"
+        price: "¥750"
       },{
         name: "パニールマカニカレー",
         description: "Butter chicken might be tempting, but Panner Makani has its own story.",
-        price: "$980"
+        price: "¥980"
       }
     ],
     nan: [
@@ -125,17 +125,17 @@ export const jsonJp = {
         name: "チーズナン",
         image: cheeseNan,
         description: "Circular nan with cheesey inside.",
-        price: "$420"
+        price: "¥420"
       },{
         name: "にんにくチーズナン",
         image: garlicCheeseNan,
         description: "Nan with cheese might be something. But, cheesey Nan with garlic is more than something.",
-        price: "$450"
+        price: "¥450"
       },{
         name: "アルーパラタ",
         image: aluParatha,
         description: "Paratha is one of the most eaten delicacy in India. This one in particular has a filling of mashed potato and Indian spices.",
-        price: "$400"
+        price: "¥400"
       }
     ],
     sides: [
@@ -146,22 +146,22 @@ export const jsonJp = {
             name: "チキンティッカ",
             image: chickenTikka,
             description: "Boneless chicken grilled in tandori with Indian spices.",
-            price: "$560"
+            price: "¥560"
           },{
             name: "タンドリーチキン",
             image: tandooriChicken,
             description: "Place where we are from, we need atleast a bit of fight to savour our victory. Likewise for meat, we need a bit of bone to enjoy the juicy texture.",
-            price: "$420(1p)"
+            price: "¥420(1p)"
           },{
             name: "タンドリーミックスグリル",
             image: tandooriMix,
             description: "True heaven for meat lover.",
-            price: "$1350"
+            price: "¥1350"
           },{
             name: "タンドリーエビ",
             image: tandooriPrawn,
             description: "Since we tandoor everything, why not AB. It is tandoor everything gone right.",
-            price: "$700"
+            price: "¥700"
           }
         ]
       },
@@ -172,12 +172,12 @@ export const jsonJp = {
             name: " パニールサラダ",
             image: pannerSalad,
             description: "Salad with indian inhouse cheese.",
-            price: "$500"
+            price: "¥500"
           },{
           name: "トマトサラダ",
           image: tomatoSalad,
           description: "Salad with Juicy tomato.",
-          price: "$500"
+          price: "¥500"
           }
         ]
       },
@@ -188,17 +188,17 @@ export const jsonJp = {
             name: "モ:モ",
             image: moMo,
             description: "Nepalese style dumpling filled with juicy and spicy chicken and mutton.",
-            price: "$500"
+            price: "¥500"
           },{
             name: "オニオンリング",
             image: OnionRing,
             description: "Deep fried onion with special spiced batter.",
-            price: "$300"
+            price: "¥300"
           },{
             name: "砂肝炒め",
             image: sunagimoItame,
             description: "Gizzard fry that does wonder.",
-            price: "$440"
+            price: "¥440"
           }
         ]
       }
@@ -211,27 +211,27 @@ export const jsonJp = {
           {
             name: "A セット",
             description: "サラダ、ダルカレー、ナン/ライス、ソフトドリンク",
-            price: "$680"
+            price: "¥680"
           },{
             name: "B セット",
             description: "サラダ、チョイスカレー、ナン/ライス、ソフトドリンク",
-            price: "$780"
+            price: "¥780"
           },{
             name: "C セット",
             description: "チキンティッカ（2p）、チョイスカレー、ナン/ライス、ソフトドリンクのサラダ",
-            price: "$890"
+            price: "¥890"
           },{
             name: "D セット",
             description: "シークカバブとマライティッカ、サラダ、ダルカレー、ナン/ライス、ソフトドリンク",
-            price: "$1150"
+            price: "¥1150"
           },{
             name: "Jahan Lunch セット",
             description: "マライティッカ（2p、サラダ、チョイスカレー、ナン/ライス、ソフトドリンク",
-            price: "$920"
+            price: "¥920"
           },{
             name: "2 curry セット",
             description: "チキンティッカとタンドリーチキンのサラダ、日替わりカレーとチョイスカレー、ナン/ライスとソフトドリンク",
-            price: "$980"
+            price: "¥980"
           }
         ]
       }, {
@@ -241,31 +241,31 @@ export const jsonJp = {
           {
             name: "ディナー セット",
             description: "サラダ、チョイスカレー、ナン/ライス、ソフトドリンク",
-            price: "$1150"
+            price: "¥1150"
           },{
             name: "ヤサイ Thali",
             description: "サラダ、ダル、サグパンナーカレー、ナン、ライス、ソフトドリンク",
-            price: "$1250"
+            price: "¥1250"
           },{
             name: "Chicken Thali",
             description: "サラダ、チョイスカレーとチキンカレー、ナンとライスとソフトドリンク",
-            price: "$1450"
+            price: "¥1450"
           },{
             name: "Jahan セット",
             description: "タンドリチキンとシークカバブのサラダ、チョイスカレー、ナン/ライス、ソフトドリンク",
-            price: "$1600"
+            price: "¥1600"
           },{
             name: "Jodi セット",
             description: "サラダと２（マライティッカ、シークカバブ、タンドリエビ）、2種類のカレー、ナン/ライス/チーズナン（1）、ソフトドリンク",
-            price: "$3500"
+            price: "¥3500"
           },{
             name: "Beer セット",
             description: "タンドリーチキンとパパドとビール",
-            price: "$730"
+            price: "¥730"
           },{
             name: "Wine セット",
             description: "チキンティッカ、マライティッカ、シークカバブ、パパドとグラスワイン",
-            price: "$750"
+            price: "¥750"
           }
         ]
       }
@@ -276,16 +276,16 @@ export const jsonJp = {
         items: [
           {
             name: "ネパールアイス（ネパール）",
-            price: "$520"
+            price: "¥520"
           },{
             name: "エベレスト（ネパール）",
-            price: "$550"
+            price: "¥550"
           },{
             name: "キングフィッシャー (インド)",
-            price: "$550"
+            price: "¥550"
           },{
             name: "アサヒ生ビールｓ（日本）",
-            price: "$399"
+            price: "¥399"
           }
         ]
       }
@@ -294,16 +294,16 @@ export const jsonJp = {
         items: [
           {
             name: "ラッシー",
-            price: "$300"
+            price: "¥300"
           },{
             name: "マンゴーラッシー",
-            price: "$300"
+            price: "¥300"
           },{
             name: "冷たいチャイ",
-            price: "$300"
+            price: "¥300"
           },{
             name: "暖かいチャイ",
-            price: "$300"
+            price: "¥300"
           }
         ]
       },{
@@ -311,16 +311,16 @@ export const jsonJp = {
         items: [
           {
             name: "8848（ウォッカ-ネパール）",
-            price: "$450"
+            price: "¥450"
           },{
             name: " ククリ ラム (ラム‐ネパール)",
-            price: "$450"
+            price: "¥450"
           },{
             name: "オールド ダルバール（ウイスキー-ネパール）",
-            price: "$450"
+            price: "¥450"
           },{
             name: "マクダウェル(ラム-インド)",
-            price: "$450"
+            price: "¥450"
           }
         ]
       }

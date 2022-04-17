@@ -57,7 +57,7 @@ const Menu = () => {
                 < Sets sets={ menu.sets } />
               </Tab.Pane>
               <Tab.Pane eventKey={menu.menuList[4]}>
-                < Drink />
+                < Drink drinks={ menu.drinks } />
               </Tab.Pane>
             </Tab.Content>
           </Col>
