@@ -75,6 +75,7 @@ export const jsonJp = {
     ]
   },
   menu: {
+    menuList: ["カレ―", "ナン", "サイド", "セット", "ドリンク"],
     curry: [
       {
         name: "チキンカレー",

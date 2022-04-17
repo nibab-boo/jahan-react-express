@@ -74,7 +74,9 @@ export const jsonEn = {
       }
     ]
   },
+
   menu: {
+    menuList: ["Curry", "Nan", "Side", "Set", "Drink"],
     curry: [
       {
         name: "Chicken Curry",

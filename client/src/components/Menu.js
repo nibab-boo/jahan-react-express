@@ -18,14 +18,17 @@ const Menu = () => {
   const menu = json.menu;
   return (
     <Container className='mt-5 py-5 position-relative'>
-      <Tab.Container id="left-tabs-example" defaultActiveKey="Sets">
+      <Tab.Container id="left-tabs-example" defaultActiveKey={menu.menuList[0]}>
         <Row>
           <Col  className="menu-col menu-page" xs={12} sm={3} md={2}>
             <Nav variant="pills">
-              <Nav.Item>
-                <Nav.Link eventKey="Curry">Curry</Nav.Link>
+              {menu.menuList.map((subMenu) => (
+
+                <Nav.Item>
+                <Nav.Link eventKey={subMenu}>{subMenu}</Nav.Link>
               </Nav.Item>
-              <Nav.Item>
+              ))}
+              {/* <Nav.Item>
                 <Nav.Link eventKey="Nan">Nan</Nav.Link>
               </Nav.Item>
               <Nav.Item>
@@ -36,25 +39,24 @@ const Menu = () => {
               </Nav.Item>
               <Nav.Item>
                 <Nav.Link eventKey="Drink">Drinks</Nav.Link>
-              </Nav.Item>
+              </Nav.Item> */}
             </Nav>
           </Col>
           <Col className="menu-col menu-content" xs={12} sm={9} md={10}>
             <Tab.Content>
-              <Tab.Pane eventKey="Curry">
+              <Tab.Pane eventKey={menu.menuList[0]}>
                 < Curry curries= { menu.curry } />
               </Tab.Pane>
-              <Tab.Pane eventKey="Nan">
+              <Tab.Pane eventKey={menu.menuList[1]}>
                 < Nan nans= { menu.nan }/>
               </Tab.Pane>
-              <Tab.Pane eventKey="Sides">
+              <Tab.Pane eventKey={menu.menuList[2]}>
                 <Sides sides={menu.sides} />
               </Tab.Pane>
-              
-              <Tab.Pane eventKey="Sets">
+              <Tab.Pane eventKey={menu.menuList[3]}>
                 < Sets sets={ menu.sets } />
               </Tab.Pane>
-              <Tab.Pane eventKey="Drink">
+              <Tab.Pane eventKey={menu.menuList[4]}>
                 < Drink />
               </Tab.Pane>
             </Tab.Content>
