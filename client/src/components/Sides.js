@@ -1,8 +1,6 @@
 import React from 'react';
 import { Tabs, Tab } from 'react-bootstrap';
 
-import cheeseNan from "./../assets/images/cheese_nan.jpeg"
-
 const Sides = ({ sides }) => {
   return (
     <>
@@ -15,7 +13,7 @@ const Sides = ({ sides }) => {
                   sideType.items.map((side) => (
 
                     <div className="food-card">
-                      <img src={cheeseNan} alt={`${side.name}`} />
+                      <img src={side.image} alt={`${side.name}`} />
                       <div className="set-card">
                         <h4 className="food-name">{side.name}</h4>
                         <p className="food-info">{side.description}</p>
