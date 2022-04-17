@@ -4,7 +4,7 @@ import { Tabs, Tab } from 'react-bootstrap';
 const Sides = ({ sides }) => {
   return (
     <>
-      <Tabs defaultActiveKey="Tandoori" id="menu-sub-tab" className="mb-3">
+      <Tabs defaultActiveKey={sides[0].name} id="menu-sub-tab" className="mb-3">
         {
           sides.map((sideType) => (
             <Tab eventKey={sideType.name} title={sideType.name}>

@@ -5,7 +5,7 @@ import { Tabs, Tab } from  'react-bootstrap'
 const Sets = ({ sets }) => {
   return (
     <>
-      <Tabs defaultActiveKey="Lunch" id="menu-sub-tab" className="mb-3">
+      <Tabs defaultActiveKey={sets[0].name} id="menu-sub-tab" className="mb-3">
         {sets.map( (setType) => (
           <Tab eventKey={setType.name} title={setType.name}>
 
