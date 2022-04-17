@@ -1,9 +1,10 @@
 import React from 'react';
 import logo from './../assets/images/logo.png'
-// import axios from 'axios';
-import { Navbar, Container, Nav } from 'react-bootstrap';
+import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { useLanUpdateContext } from './LanguageProvider';
 const Header = () => {
+  const toggleLan = useLanUpdateContext();
   return (
     <Navbar sticky='top' collapseOnSelect expand="lg" className='main-nav' variant="dark">
       <Container>
@@ -22,8 +23,15 @@ const Header = () => {
           <Link className='nav-link' to="/menu">
             Menu
           </Link>
-          <Link className='nav-link' to="/blogs">Blogs</Link>
-          <Link className='nav-link' to="/reservation">Reservation</Link>
+          <a className='nav-link' href='tel:0489155644'>Call</a>
+          <NavDropdown title="Lan" className="text-center" id="basic-nav-dropdown">
+            <NavDropdown.Item onClick={ toggleLan } >English</NavDropdown.Item>
+            <NavDropdown.Divider />
+            <NavDropdown.Item onClick={ toggleLan }>日本語</NavDropdown.Item>
+          </NavDropdown>
+
+          {/* <Link className='nav-link' to="/blogs">Blogs</Link> */}
+          {/* <Link className='nav-link' to="/reservation">Reservation</Link> */}
         </Nav>
       </Navbar.Collapse>
       </Container>

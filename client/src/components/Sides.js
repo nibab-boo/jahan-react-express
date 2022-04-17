@@ -2,9 +2,10 @@ import React from 'react';
 import { Tabs, Tab } from 'react-bootstrap';
 
 const Sides = ({ sides }) => {
+  console.log(sides[0].name)
   return (
     <>
-      <Tabs defaultActiveKey={sides[0].name} id="menu-sub-tab" className="mb-3">
+      <Tabs defaultActiveKey={sides[0].name} id="menu-sides-tab" className="mb-3">
         {
           sides.map((sideType) => (
             <Tab eventKey={sideType.name} title={sideType.name}>
