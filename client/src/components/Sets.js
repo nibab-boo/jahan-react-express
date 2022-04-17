@@ -6,15 +6,15 @@ const Sets = ({ sets }) => {
   return (
     <>
       <Tabs defaultActiveKey={sets[0].name} id="menu-sub-tab" className="mb-3">
-        {sets.map( (setType) => (
-          <Tab eventKey={setType.name} title={setType.name}>
+        {sets.map( (setType, index) => (
+          <Tab eventKey={setType.name} title={setType.name} key={index}>
             <div className="choice-curry">
               <h5>Choice Curries</h5>
               {setType.choices} 
             </div>
             <div className={`sets-section ${setType.name}`}>
-              { setType.items.map((set) => (
-                <div className="set-card shadow">
+              { setType.items.map((set, i) => (
+                <div className="set-card shadow" key={i}>
                   <h4 className="food-name">{set.name}</h4>
                   <p className="food-info">{set.description}</p>
                   <p className="food-info price">{set.price}</p>

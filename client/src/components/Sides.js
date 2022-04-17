@@ -7,13 +7,13 @@ const Sides = ({ sides }) => {
     <>
       <Tabs defaultActiveKey={sides[0].name} id="menu-sides-tab" className="mb-3">
         {
-          sides.map((sideType) => (
-            <Tab eventKey={sideType.name} title={sideType.name}>
+          sides.map((sideType, index) => (
+            <Tab eventKey={sideType.name} title={sideType.name} key={index}>
               <div className='food-box'>
                 { 
-                  sideType.items.map((side) => (
+                  sideType.items.map((side, i) => (
 
-                    <div className="food-card">
+                    <div className="food-card" key={i}>
                       <img src={side.image} alt={`${side.name}`} />
                       <div className="set-card">
                         <h4 className="food-name">{side.name}</h4>

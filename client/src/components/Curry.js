@@ -7,9 +7,9 @@ const Curry = ({curries}) => {
   return (
     <div className='food-box'>
       {
-        curries.map((curry) => {
+        curries.map((curry, index) => {
           return (
-            <div className="food-card">
+            <div className="food-card" key={index}>
               <div className="set-card">
                 <h4 className="food-name">{curry.name}</h4>
                 <p className="food-info">{curry.description}</p>
