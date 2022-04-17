@@ -1,9 +1,11 @@
 import React from 'react';
-// import { Con tainer } from 'react-bootstrap';
+// import { Container } from 'react-bootstrap';
+import { useLanContext } from './LanguageProvider';
 
 // ABVv5iKEv8C8JkjyypHCz9cVhTW_smLMW7fSq2z0YPYhwy3R6K71Bw1GfppQHo16lKep3a63z51T
 const Contact = () => {
-
+  const json = useLanContext();
+  const contact = json.contact;
 
   return (
     <div className='container'>
@@ -18,13 +20,13 @@ const Contact = () => {
           <div className="contact-box ms-5">
             <p className="info location">
               <a href="https://www.google.com/maps/place/JAHAN+indian+nepali+restaurent/@35.880672,139.844126,15z/data=!4m5!3m4!1s0x0:0x9f8da709e5067a31!8m2!3d35.880672!4d139.844126?hl=en">
-                〒342-0041 Saitama, Yoshikawa, Ho, 1 Chome−２７−4
+                { contact.address }
               </a> 
             </p>
             <p className='info telephone'><a href="tel:0489155644">TEL : 0489155644</a></p>
             <div className="contact-links">
-              <a href="https://www.google.com/maps/place/JAHAN+indian+nepali+restaurent/@35.880672,139.844126,15z/data=!4m5!3m4!1s0x0:0x9f8da709e5067a31!8m2!3d35.880672!4d139.844126?hl=en" className='contact-link'>Get direction</a>
-              <a href="tel:0489155644" className='contact-link'>Make a Call</a>
+              <a href="https://www.google.com/maps/place/JAHAN+indian+nepali+restaurent/@35.880672,139.844126,15z/data=!4m5!3m4!1s0x0:0x9f8da709e5067a31!8m2!3d35.880672!4d139.844126?hl=en" className='contact-link'>{ contact.directionBtn }</a>
+              <a href="tel:0489155644" className='contact-link'>{ contact.callBtn }</a>
             </div>
           </div>
         </div>

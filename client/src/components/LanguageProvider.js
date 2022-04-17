@@ -16,7 +16,7 @@ export const useLanUpdateContext = () => {
 const LanguageProvider = ({children}) => {
   const [enLan, setEnLan] = useState(true);
 
-  const [json, setJson] = useState(jsonEn);
+  const [json, setJson] = useState(jsonJp);
 
   const toggleLan = () => {
     setEnLan(() => !enLan);
