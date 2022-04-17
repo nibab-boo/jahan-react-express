@@ -28,15 +28,15 @@ export const jsonEn = {
         items: [
           {
             item: "Instagram",
-            link: "www.instagram.com"
+            link: "https://www.instagram.com/jahancurry/"
           },
           {
             item: "Twitter",
-            link: "www.instagram.com"
+            link: "https://twitter.com/jahancurry"
           },
           {
             item: "Facebook",
-            link: "www.instagram.com"
+            link: "https://www.facebook.com/Jahancurry/?locale2=ja_JP&_rdr"
           }
         ]
       },{
@@ -44,11 +44,11 @@ export const jsonEn = {
         items: [
           {
             item: "Phone",
-            link: "www.instagram.com"
+            link: "tel:0489155644"
           },
           {
             item: "Uber",
-            link: "www.uber.com"
+            link: "https://www.ubereats.com/jp-en/store/%E3%82%B7%E3%83%A3%E3%83%BC%E3%83%8F%E3%83%B3%E5%90%89%E5%B7%9D-jahan/tAVTewMiStaN_-SihRStUg"
           },
           {
             item: "Demaekan",
@@ -56,19 +56,19 @@ export const jsonEn = {
           }
         ]
       },{
-        name: "Order",
+        name: "Reservation",
         items: [
           {
             item: "Phone",
-            link: "www.instagram.com"
+            link: "tel:0489155644"
           },
           {
             item: "Hotpepper",
-            link: "www.Hotpepper.com"
+            link: "https://www.hotpepper.jp/strJ001185600/yoyaku/?vos=othpporgzzzzx00000001"
           },
           {
             item: "Yahoo",
-            link: "www.Yahoo.com"
+            link: "https://paypaygourmet.yahoo.co.jp/place/g-BQUNS35LmCE/course/?sc_e=sgpa"
           }
         ]
       }
