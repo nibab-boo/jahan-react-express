@@ -1,6 +1,15 @@
 import cheeseNan from "./../assets/images/cheese_nan.jpeg"
 import garlicCheeseNan from "./../assets/images/garlic_cheese_nan.jpeg"
 import aluParatha from "./../assets/images/aluParatha.jpg"
+import chickenTikka from "./../assets/images/chicken_tikka.jpg"
+import tandooriMix from "./../assets/images/slider-02.jpg"
+import OnionRing from "./../assets/images/onionRing.jpg"
+import moMo from "./../assets/images/momo.jpg"
+import sunagimoItame from "./../assets/images/sunagimo_itame.jpg"
+import tandooriChicken from "./../assets/images/tandoori_chicken.jpg"
+import tandooriPrawn from "./../assets/images/tandoori_prawn.jpg"
+import pannerSalad from "./../assets/images/paneersalad.jpg"
+import tomatoSalad from "./../assets/images/tomato_salad.jpg"
 
 
 export const jsonEn = {
@@ -133,21 +142,25 @@ export const jsonEn = {
         name: "Tandoori",
         items: [
           {
-            name: "Tandoori Prawn",
-            description: "Since we tandoor everything, why not AB. It is tandoor everything gone right.",
-            price: "$700"
-          },{
             name: "Chicken Tikka",
+            image: chickenTikka,
             description: "Boneless chicken grilled in tandori with Indian spices.",
             price: "$560"
           },{
             name: "Tandori Chicken",
-            description: "From where we from, we need atleast a bit of fight to savour our victory. Likewise for meat, we need a bit of bone to juicy texture.",
+            image: tandooriChicken,
+            description: "Place where we are from, we need atleast a bit of fight to savour our victory. Likewise for meat, we need a bit of bone to enjoy the juicy texture.",
             price: "$420(1p)"
           },{
             name: "Tandoori Mix Gril",
+            image: tandooriMix,
             description: "True heaven for meat lover.",
             price: "$1350"
+          },{
+            name: "Tandoori Prawn",
+            image: tandooriPrawn,
+            description: "Since we tandoor everything, why not AB. It is tandoor everything gone right.",
+            price: "$700"
           }
         ]
       },
@@ -156,10 +169,12 @@ export const jsonEn = {
         items: [
           {
             name: "Panner Salad",
+            image: pannerSalad,
             description: "Salad with indian inhouse cheese.",
             price: "$500"
           },{
           name: "Tomato Salad",
+          image: tomatoSalad,
           description: "Salad with Juicy tomato.",
           price: "$500"
           }
@@ -170,14 +185,17 @@ export const jsonEn = {
         items: [
           {
             name: "Mo:Mo",
+            image: moMo,
             description: "Nepalese style dumpling filled with juicy and spicy chicken and mutton.",
             price: "$500"
           },{
             name: "Onion Ring",
+            image: OnionRing,
             description: "Deep fried onion with special spiced batter.",
             price: "$300"
           },{
             name: "Sunagimo Itame",
+            image: sunagimoItame,
             description: "Gizzard fry that does wonder.",
             price: "$440"
           }
