@@ -9,7 +9,9 @@ const Nan = ({ nans }) => {
             <div className="food-card" key={i}>
               <img src={nan.image} alt="cheese Nan" />
               <div className="set-card">
-                <h4 className="food-name">{ nan.name }</h4>
+                <h4 className="food-name">
+                  { nan.name }
+                </h4>
                 <p className="food-info">{ nan.description }</p>
                 <p className="food-info price">{ nan.price }</p>
               </div>

@@ -11,7 +11,7 @@ const Curry = ({curries}) => {
           return (
             <div className="food-card" key={index}>
               <div className="set-card">
-                <h3 className="food-name"><strong>{curry.name}</strong></h3>
+                <h4 className="food-name">{curry.name}</h4>
                 <p className="food-info">{curry.description}</p>
                 <p className="food-info price">{curry.price}</p>
               </div>

@@ -126,17 +126,17 @@ export const jsonJp = {
       {
         name: "チーズナン",
         image: cheeseNan,
-        description: "Circular nan with cheesey inside.",
+        description: "トロリチーズをたっぷり使ったインドの1番人気あつあつ焼きたてナン",
         price: "¥420"
       },{
-        name: "にんにくチーズナン",
+        name: "ガーリックチーズナン",
         image: garlicCheeseNan,
-        description: "Nan with cheese might be something. But, cheesey Nan with garlic is more than something.",
+        description: "ニンニクをトッピングで中にトロリチーズをたっぷり入りナン",
         price: "¥450"
       },{
         name: "アルーパラタ",
         image: aluParatha,
-        description: "Paratha is one of the most eaten delicacy in India. This one in particular has a filling of mashed potato and Indian spices.",
+        description: "ジャガイモとスパイス入りナン",
         price: "¥400"
       }
     ],
