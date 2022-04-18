@@ -86,15 +86,15 @@
   .map .map-box .contact-box {
     margin-top: 24px;
     margin: 0 !important;
- }
+  }
   .map .map-box .contact-box .info {
     font-size: 1em;
     margin: 8px 0;
- }
+  }
   .map .map-box .contact-box .contact-links .contact-link {
     font-size: 16px;
     padding: 6px 12px;
- }
+  }
 }
 .main-footer {
   padding: 8px;
@@ -103,11 +103,17 @@
 .main-footer h4, .main-footer h5 {
   text-align: center;
 }
+.main-footer h5 {
+  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
 .main-footer h4 {
-  width: 200px;
-  margin: 0 auto 16px;
-  padding: 16px 0px 0px;
-  border-bottom: 2px solid white;
+  max-width: 240px;
+  margin: 16px auto;
+  background: #CCA799;
+  padding: 8px;
+  border-radius: 20px;
+  /* border-bottom: 2px solid white; */
 }
 .main-footer .footer-box ul {
   list-style: none;
@@ -119,4 +125,9 @@
 }
 .main-footer .footer-box ul a:hover {
   text-decoration: underline;
+}
+@media screen and (max-width: 420px) {
+  .main-footer .footer-box ul li{
+    border-bottom: 2px solid #CCA799;
+  }
 }
