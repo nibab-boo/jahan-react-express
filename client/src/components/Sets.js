@@ -3,11 +3,12 @@ import React from 'react';
 import { Tabs, Tab } from  'react-bootstrap'
 
 const Sets = ({ sets }) => {
+  const tabList = ["Lunch", "Dinner"]
   return (
     <>
-      <Tabs defaultActiveKey={sets[0].name} id="menu-sub-tab" className="mb-3">
+      <Tabs defaultActiveKey="Lunch" id="menu-sub-tab" className="mb-3">
         {sets.map( (setType, index) => (
-          <Tab eventKey={setType.name} title={setType.name} key={index}>
+          <Tab eventKey={tabList[index]} title={setType.name} key={index}>
             <div className="choice-curry">
               <h5>Choice Curries</h5>
               {setType.choices} 

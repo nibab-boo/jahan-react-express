@@ -13,6 +13,7 @@ import tomatoSalad from "./../assets/images/tomato_salad.jpg"
 
 
 export const jsonEn = {
+  type: true,
   name: "Jahan Indo Nepal Restaurant",
   contact: {
     phone: "0489155644",
@@ -76,8 +77,8 @@ export const jsonEn = {
   },
 
   menu: {
-    menuList: ["Curry", "Nan", "Side", "Set", "Drink"],
-    curry: [
+    tabList:  ["Curry", "Nan", "Side", "Set", "Drink"],
+    curryList: [
       {
         name: "Chicken Curry",
         description: "Typical chicken curry.",
@@ -121,7 +122,7 @@ export const jsonEn = {
         price: "$980"
       }
     ],
-    nan: [
+    nanList: [
       {
         name: "Cheese Nan",
         image: cheeseNan,
@@ -139,7 +140,7 @@ export const jsonEn = {
         price: "$400"
       }
     ],
-    sides: [
+    sideList: [
       {
         name: "Tandoori",
         items: [
@@ -204,7 +205,7 @@ export const jsonEn = {
         ]
       }
     ],
-    sets: [
+    setList: [
       {
         name: "Lunch",
         choices: "Chicken, Sag Chicken, Mutton, Keema, Egg, Veg,Sag Alu, Dal.",
@@ -271,7 +272,7 @@ export const jsonEn = {
         ]
       }
     ],
-    drinks: [
+    drinkList:[
       {
         name: "Beer",
         items: [

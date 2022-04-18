@@ -14,23 +14,20 @@ export const useLanUpdateContext = () => {
 }
 
 const LanguageProvider = ({children}) => {
-  const [enLan, setEnLan] = useState(true);
+  const [enLan, setEnLan] = useState();
 
   const [json, setJson] = useState(jsonJp);
 
-  const toggleLan = () => {
-    setEnLan(() => !enLan);
-    changeJson();
-  }
-
-  const changeJson = () => {
+  useEffect(()=> {
     if (enLan) {
       setJson(jsonEn);
     } else {
       setJson(jsonJp);
     }
+  }, [enLan])
+  const toggleLan = (newLan) => {
+    setEnLan(newLan);
   }
-
 
   return (
     <LanguageContext.Provider value = { json }>

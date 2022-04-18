@@ -13,6 +13,7 @@ import tomatoSalad from "./../assets/images/tomato_salad.jpg"
 
 
 export const jsonJp = {
+  type: false,
   name: "ジャハンインドネパール料理",
   contact: {
     phone: "0489155644",
@@ -75,8 +76,8 @@ export const jsonJp = {
     ]
   },
   menu: {
-    menuList: ["カレ―", "ナン", "サイド", "セット", "ドリンク"],
-    curry: [
+    tabList: ["カレ―", "ナン", "サイド", "セット", "ドリンク"],
+    curryList: [
       {
         name: "チキンカレー",
         description: "人気のチキンカレー.",
@@ -120,7 +121,7 @@ export const jsonJp = {
         price: "¥980"
       }
     ],
-    nan: [
+    nanList: [
       {
         name: "チーズナン",
         image: cheeseNan,
@@ -138,7 +139,7 @@ export const jsonJp = {
         price: "¥400"
       }
     ],
-    sides: [
+    sideList: [
       {
         name: "タンドリー",
         items: [
@@ -203,7 +204,7 @@ export const jsonJp = {
         ]
       }
     ],
-    sets: [
+    setList: [
       {
         name: "ランチ",
         choices: "チキン、サグチキン、マトン、キーマ、卵、野菜、サグアル、ダル.",
@@ -270,7 +271,7 @@ export const jsonJp = {
         ]
       }
     ],
-    drinks: [
+    drinkList: [
       {
         name: "ビール",
         items: [

@@ -2,13 +2,13 @@ import React from 'react';
 import { Tabs, Tab } from 'react-bootstrap';
 
 const Sides = ({ sides }) => {
-  console.log(sides[0].name)
+  const tabList = ["Tandoori", "Salad", "Appetizer"];
   return (
     <>
-      <Tabs defaultActiveKey={sides[0].name} id="menu-sides-tab" className="mb-3">
+      <Tabs defaultActiveKey="Tandoori" id="menu-sides-tab" className="mb-3">
         {
           sides.map((sideType, index) => (
-            <Tab eventKey={sideType.name} title={sideType.name} key={index}>
+            <Tab eventKey={tabList[index]} title={sideType.name} key={index}>
               <div className='food-box'>
                 { 
                   sideType.items.map((side, i) => (

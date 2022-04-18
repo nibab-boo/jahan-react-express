@@ -25,9 +25,9 @@ const Header = () => {
           </Link>
           <a className='nav-link' href='tel:0489155644'>Call</a>
           <NavDropdown title="Lan" className="text-center" id="basic-nav-dropdown">
-            <NavDropdown.Item onClick={ toggleLan } >English</NavDropdown.Item>
+            <NavDropdown.Item onClick={ ()=> toggleLan(true) } >English</NavDropdown.Item>
             <NavDropdown.Divider />
-            <NavDropdown.Item onClick={ toggleLan }>日本語</NavDropdown.Item>
+            <NavDropdown.Item onClick={ ()=> toggleLan(false) }>日本語</NavDropdown.Item>
           </NavDropdown>
 
           {/* <Link className='nav-link' to="/blogs">Blogs</Link> */}
