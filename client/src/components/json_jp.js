@@ -81,44 +81,44 @@ export const jsonJp = {
     curryList: [
       {
         name: "チキンカレー",
-        description: "人気のチキンカレー.",
+        description: "当店オリジナル鶏肉カレー",
         price: "¥650"
       },
       {
         name: "バターチキン",
-        description: "When we say butter chicken, we mean good, old, everyone's favourite.",
+        description: "トマトとクリームをベースとしたカレーソースで煮込んだカレー",
         price: "¥980"
       },
       {
         name: "チキンクルマ",
-        description: "Special curry with sweet flavour made with malai tikka and nuts.",
+        description: "チキンとカシューナッツなどのクリーミーなカレー",
         price: "¥800"
       },
       {
         name: "マトンカレー",
-        description: "Curry with Lamb meat",
+        description: "羊肉を柔らかく煮込んだカレー",
         price: "¥750"
       },
       {
         name: "マトンドピヤジャ",
-        description: "Mutton curry flavoured with garlic and Capsicum.",
+        description: "玉ねぎたっぷり入った洋肉カレー",
         price: "¥800"
       },
       {
         name: "キーマカレー",
-        description: "Curry Made of minced chicken and mutton",
+        description: "鶏挽肉のスパイシーなカレー",
         price: "¥750"
       },{
         name: "キーマナスカレー",
-        description: "Keema Curry with Nas topping",
+        description: "茄子入り挽肉カレー",
         price: "¥750"
       },{
-        name: "野菜カレー",
-        description: "Combination of veggie brought together so you don't have to compromise.",
+        name: "ミックス野菜野菜カレー",
+        description: "ミックス野菜のヘルシーなカレー",
         price: "¥750"
       },{
         name: "パニールマカニカレー",
-        description: "Butter chicken might be tempting, but Panner Makani has its own story.",
+        description: "宮廷料理のカレーと言われている自家製チーズのマイルドカレー",
         price: "¥980"
       }
     ],
