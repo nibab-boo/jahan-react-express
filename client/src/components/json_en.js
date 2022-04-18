@@ -15,6 +15,7 @@ import tomatoSalad from "./../assets/images/tomato_salad.jpg"
 export const jsonEn = {
   type: true,
   name: "Jahan Indo Nepal Restaurant",
+  navBar: ["Home","Menu", "Call","Lan"],
   contact: {
     phone: "0489155644",
     address: "〒342-0041 Saitama, Yoshikawa, Ho, 1 Chome−２７−4",

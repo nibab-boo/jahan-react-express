@@ -14,7 +14,8 @@ import tomatoSalad from "./../assets/images/tomato_salad.jpg"
 
 export const jsonJp = {
   type: false,
-  name: "ジャハンインドネパール料理",
+  name: "ジャハン インド ネパール 料理",
+  navBar: ["ホム","メニュ", "電話","語"],
   contact: {
     phone: "0489155644",
     address: "〒342-0041 埼玉県吉川市保、1丁目-27-4",
