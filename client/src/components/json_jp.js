@@ -147,22 +147,22 @@ export const jsonJp = {
           {
             name: "チキンティッカ",
             image: chickenTikka,
-            description: "Boneless chicken grilled in tandori with Indian spices.",
+            description: "脅なしチキンにヨーグルト、レモンなどで仕上げたタンドリー、ビールに良し！",
             price: "¥560"
           },{
             name: "タンドリーチキン",
             image: tandooriChicken,
-            description: "Place where we are from, we need atleast a bit of fight to savour our victory. Likewise for meat, we need a bit of bone to enjoy the juicy texture.",
+            description: "骨付きチキンにヨーグルト、スパイスを混ぜて焼いたインドの最も代表的な釜焼きチキン",
             price: "¥420(1p)"
           },{
             name: "タンドリーミックスグリル",
             image: tandooriMix,
-            description: "True heaven for meat lover.",
+            description: "タンドリーの盛り合わせ",
             price: "¥1350"
           },{
             name: "タンドリーエビ",
             image: tandooriPrawn,
-            description: "Since we tandoor everything, why not AB. It is tandoor everything gone right.",
+            description: "スペイス漬け込んだ海老のタンドール窯焼き",
             price: "¥700"
           }
         ]
@@ -173,12 +173,12 @@ export const jsonJp = {
           {
             name: " パニールサラダ",
             image: pannerSalad,
-            description: "Salad with indian inhouse cheese.",
+            description: "自家製チーズ入りサラダ",
             price: "¥500"
           },{
           name: "トマトサラダ",
           image: tomatoSalad,
-          description: "Salad with Juicy tomato.",
+          description: "丸ごとトマトの冷やしトマト",
           price: "¥500"
           }
         ]
@@ -189,17 +189,17 @@ export const jsonJp = {
           {
             name: "モ:モ",
             image: moMo,
-            description: "Nepalese style dumpling filled with juicy and spicy chicken and mutton.",
+            description: "ネパ ール風蒸酸子",
             price: "¥500"
           },{
             name: "オニオンリング",
             image: OnionRing,
-            description: "Deep fried onion with special spiced batter.",
+            description: "インド風オニオンの天ぶら",
             price: "¥300"
           },{
             name: "砂肝炒め",
             image: sunagimoItame,
-            description: "Gizzard fry that does wonder.",
+            description: "砂肝のネパール風妙め",
             price: "¥440"
           }
         ]
